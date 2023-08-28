@@ -1,6 +1,6 @@
 import pandas as pd
 
-csv_file_path = 'datasets/Faculty_CS_ECE-20230806.csv'
+csv_file_path = '../datasets/Faculty_CS_ECE-20230806.csv'
 data = pd.read_csv(csv_file_path)
 
 # Count the number of empty rows per column
