@@ -42,25 +42,26 @@ shimin-luo-science-analytics/
     - README.md
     - requirements.txt
 ```
+
 ## Description and Algorithmic Design 
 
 * `pre_task/MVR.ipynb`: Replicate the MVR algorithm and validate its quality.
-* `src/data_retrival_openAlex.ipynb`: Extract and cleanse data from `datasets/faculty.json`, standardize institution names, retrieve publication information through the OpenAlex API using names and institution details, and consolidate all information into three `node` data files and two `relationship` data files. Import these files into the `Neo4j` graph database.
+* `src/data_retrival_openAlex.ipynb`: Extract and clean data from `datasets/faculty.json`, standardize institution names, retrieve publication information through the OpenAlex API using names and institution details, and consolidate all information into three `node` data files and two `relationship` data files. Import these files into the `Neo4j` graph database.
 * `src/DBLP_test.ipynb` and `src/semantic_test.ipynb`: Conducted experiments to analyze DBLP & Semantic Scholar data quality (Eg. the missing rate of affiliation)
 * `src/image_based_identification.py`: Utilize the Google Search API to crawl images from faculties' websites, download image files, and employ `DeepFace` for image recognition to obtain information about the faculties' gender and ethnicity.
-* `src/name_based_identification.py`: Usage of Two Methods (Ethnea, gender-guesser) for Name-based Recognition of Ethnicity and Gender.
+* `src/name_based_identification.py`: Usage of Two Methods (Ethnea, gender-guesser) for name-based recognition of ethnicity and gender.
 * `gender_race_identification.ipynb`: Merging some of my code with Alicia's search process code.
-* `src/new_data_quick_look.py`: Just a simple review of the data quality in the newly released dataset, `datasets/Faculty_CS_ECE-20230806.csv`: statistics on missing data in each column and the count of distinctive data in specific columns.
+* `src/new_data_quick_look.py`: Just a simple review of the data quality in the newly released dataset `datasets/Faculty_CS_ECE-20230806.csv`, statistics on missing data in each column and the count of distinctive data in specific columns.
 
 ## Demo video
 
-
+* Science Analytics: https://drive.google.com/file/d/1goLgnSs1M0_2r1T0g5bkmsU-4C6725hT/view?usp=drive_link
+* MVR algorithm: https://drive.google.com/file/d/1YhspqJb0mtnUfYf2Tu9msntLpYxjm6dH/view?usp=drive_link
 
 ## Issues and Future Work
 
 * While searching in OpenAlex, using the same author and institution for search might result in different records. However, these records could potentially refer to the same individual. It's important to note that in the `src/data_retrival_openAlex.ipynb` notebook, there is no entity merging operation conducted.
 * The code in `src/name_based_identification.py` cannot be run directly. These three code blocks need to be integrated back into Alicia's overall code and further developed in order to run successfully.
-
 
 ## References 
 * MVR algorithm: 
