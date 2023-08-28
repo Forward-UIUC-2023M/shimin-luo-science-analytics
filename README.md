@@ -31,6 +31,9 @@ shimin-luo-science-analytics/
     - datasets/ 
         -- faculty.json
         -- Faculty_CS_ECE-20230806.csv
+    - report/
+        -- Summer_Research_Report.pdf
+        -- Task 1 report.pdf
     - src/
         -- data_retrival_openAlex.ipynb
         -- DBLP_test.ipynb
